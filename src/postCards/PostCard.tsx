@@ -1,8 +1,8 @@
-const PostCard = (props:{title:string; desc:string}) => {
+const PostCard = (props:{title:string; body:string}) => {
   return (
     <div className='postCard'>
         <h2>{props.title}</h2>
-        <p>{props.desc}</p>
+        <p>{props.body}</p>
     </div>
   )
 }
