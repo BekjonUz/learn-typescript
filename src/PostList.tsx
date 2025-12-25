@@ -25,7 +25,7 @@ const PostList = () => {
   return (
     <div className="postList">
       {data.map((post:PostProps) => (
-        <PostCard key={post.id} title={post.title.toLocaleUpperCase()} body={post.body} />
+        <PostCard id={post.id} key={post.id} title={post.title.toLocaleUpperCase()} body={post.body} />
       ))}
     </div>
   );
