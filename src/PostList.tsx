@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PostCard from "./postCards/PostCard";
+import type { PostProps } from "./types/types";
 
 const PostList = () => {
   interface Post {
@@ -23,7 +24,7 @@ const PostList = () => {
   }, []);
   return (
     <div className="postList">
-      {data.map((post) => (
+      {data.map((post:PostProps) => (
         <PostCard key={post.id} title={post.title.toLocaleUpperCase()} body={post.body} />
       ))}
     </div>
